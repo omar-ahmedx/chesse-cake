@@ -121,11 +121,13 @@ const Layout = ({ path, children }) => {
       });
     });
   });
-  if (path === "work") {
-    document.querySelector("body").classList.add("dark");
-  } else {
-    document.querySelector("body").classList.remove("dark");
-  }
+  useEffect(() => {
+    if (path === "work") {
+      document.querySelector("body").classList.add("dark");
+    } else {
+      document.querySelector("body").classList.remove("dark");
+    }
+  });
   return (
     <div>
       <Helmet>

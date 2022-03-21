@@ -1,0 +1,92 @@
+li {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 15rem 0;
+}
+
+li:last-of-type {
+  margin-bottom: 5rem;
+}
+li div {
+  flex-basis: 45%;
+  position: relative;
+}
+li div h2 {
+  font-size: 5.5rem;
+  color: #f49578;
+  font-weight: normal;
+}
+li div h3 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+li div p {
+  font-size: 1.1rem;
+  line-height: 2;
+}
+.list_num {
+  margin-bottom: 1.2rem;
+  font-size: 1.2rem;
+  color: #ff9c7d;
+  line-height: 1.25;
+  font-family: IBM Plex Mono, ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, "Liberation Mono", "Courier New", monospace;
+}
+@media (max-width: 1100px) {
+  li {
+    flex-direction: column;
+    margin: 10rem 0;
+  }
+  li div h2 {
+    font-size: 3.2rem;
+    margin-bottom: 3.4rem;
+  }
+  li div h3 {
+    display: none;
+  }
+  li div p {
+    font-size: 1.2rem;
+  }
+}
+.gif {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.gif img {
+  width: 35rem;
+  transform: translate(43%, -30%);
+}
+@media (max-width: 1100px) {
+  .gif img {
+    transform: translate(0%, -50%);
+  }
+}
+@media (max-width: 620px) {
+  .gif img {
+    transform: translate(24%, -50%);
+    width: 23rem;
+  }
+}
+.member_name {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.quote {
+  margin-top: 20px;
+  font-size: 1rem;
+  opacity: 0;
+  transition: all 0.25s ease 0s;
+  color: #ff9c7d;
+  line-height: 1.7;
+}
+@media (max-width: 1100px) {
+  .quote {
+    display: none;
+  }
+}
+.member:hover .quote {
+  opacity: 1;
+}

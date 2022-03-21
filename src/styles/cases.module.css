@@ -1,0 +1,44 @@
+.full_case {
+  margin: 10rem 0;
+  position: relative;
+}
+.video_container {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.home_btn {
+  composes: btn from "./global.module.css";
+  margin: 0 auto;
+  width: 250px;
+  color: black;
+  outline: 2px solid black;
+}
+.home_line {
+  composes: line_btn from "./global.module.css";
+  background-color: black;
+}
+
+/*--- Work Cases ---*/
+.work_cases {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  column-gap: 2rem;
+  row-gap: 7rem;
+  padding-bottom: 5em;
+  margin: 8em 0;
+  border-bottom: 1px solid #c7c7c7;
+}
+.work_case_wrapper {
+  position: relative;
+}
+@media (max-width: 920px) {
+  .work_cases {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+  }
+}
+@media (max-width: 651px) {
+  .work_cases {
+    grid-template-columns: repeat(1, minmax(0px, 1fr));
+  }
+}

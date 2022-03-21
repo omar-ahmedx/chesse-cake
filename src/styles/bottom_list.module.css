@@ -1,0 +1,23 @@
+.item {
+  position: relative;
+  font-size: 6.5em;
+  color: black;
+}
+@media (max-width: 920px) {
+  .item {
+    font-size: 3em;
+    padding: 4rem 0;
+  }
+}
+.gif {
+  top: 0;
+  position: absolute;
+  width: 200px;
+}
+.middle_text {
+  font-family: "Gilda Display", serif;
+}
+.border {
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+}

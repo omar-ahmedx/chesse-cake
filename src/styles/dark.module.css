@@ -1,0 +1,51 @@
+/*--- cases ---*/
+.light_caption {
+  composes: caption from "./global.module.css";
+  color: white;
+}
+.light_category {
+  composes: category from "./global.module.css";
+  color: white;
+}
+.light_dot {
+  composes: dot from "./global.module.css";
+  background-color: white !important;
+}
+/*--- footer ---*/
+.light_footer_link {
+  composes: links from "./footer.module.css";
+  color: white;
+}
+.light_footer_link a {
+  color: white;
+}
+.light_border_expand {
+  composes: border_expand from "./footer.module.css";
+  border-color: white;
+}
+.light_footer_btn {
+  composes: footer_btn from "./footer.module.css";
+  outline-color: white;
+  background-color: white;
+  color: black;
+}
+.light_footer_btn:hover {
+  color: white;
+}
+.light_footer_line {
+  composes: line_btn from "./global.module.css";
+  background-color: black;
+}
+.light_footer_btn:hover .light_footer_line {
+  background-color: white;
+}
+.light_social_links {
+  composes: social_links from "./footer.module.css";
+  color: white;
+}
+.light_social_links a svg {
+  color: white;
+}
+.light_color span {
+  color: white;
+}

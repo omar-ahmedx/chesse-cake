@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 225px;
+  min-height: calc(-220px + 100vh);
+  border-bottom: 1px solid #c7c7c7;
+}
+@media (max-width: 920px) {
+  .container {
+    min-height: calc(-115px + 100vh);
+  }
+}
+.fontFamily {
+  font-family: Gilda Display, ui-serif, Georgia, Cambria, "Times New Roman",
+    Times, serif;
+}
+.h1 {
+  font-size: 7.4rem;
+  font-weight: normal;
+  line-height: 1.1;
+}
+.h2 {
+  padding: 15px 0;
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.4;
+}
+@media (max-width: 920px) {
+  .h1 {
+    font-size: 9vh;
+  }
+  .h2 {
+    font-size: calc(1.2rem + 1vw);
+  }
+}
+@media (max-width: 770px) {
+  .h1 {
+    font-size: 4.4rem;
+  }
+  .h2 {
+    font-size: 1.5rem;
+  }
+}

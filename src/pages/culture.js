@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from "react-helmet";
 import Bases from "../components/shared/Base";
 import Layout from "../components/layout/Layout";
 import BottomList from "../components/shared/BottomList";
@@ -9,6 +10,11 @@ import Team from "../components/culture/Team";
 const Culture = () => {
   return (
     <Layout>
+      <Helmet>
+        <title>
+          Design your Application with UI UX design agency- Cheesecake Agency
+        </title>
+      </Helmet>
       <div>
         <Bases
           h1="Made to make"

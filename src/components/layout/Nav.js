@@ -2,27 +2,48 @@ import { Link } from "gatsby";
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import * as nav from "../../styles/nav.module.css";
-import * as container from "../../styles/container.module.css";
+import * as section from "../../styles/container.module.css";
 import * as animation from "../../styles/animation.module.css";
 
-const Nav = () => {
+const Nav = ({ path }) => {
   return (
-    <header>
-      <div className={container.container}>
-        <div className={nav.wrapper}>
+    <div>
+      <div className={section.container}>
+        <div className={nav.desktop_wrapper}>
           <div className={nav.logo_container}>
             <Link to="/">
               {/* <p>CheeseCake</p> */}
-              <StaticImage
-                src="../../images/logo.png"
-                alt="cheeseCake"
-                height={70}
-              />
+              {path === "work" ? (
+                <StaticImage
+                  src="../../images/whiteLogo.png"
+                  alt="cheeseCake"
+                  height={70}
+                />
+              ) : (
+                <StaticImage
+                  src="../../images/logo.png"
+                  alt="cheeseCake"
+                  height={70}
+                />
+              )}
             </Link>
           </div>
           <nav className={nav.desktop}>
-            <Link to="/work">
-              <div className={`${nav.link} ${animation.deconstructed}`}>
+            <Link
+              to="/work"
+              activeStyle={
+                path === "work"
+                  ? { borderBottomColor: "white" }
+                  : { borderBottomColor: "black" }
+              }
+            >
+              <div
+                className={`${nav.link} ${
+                  path === "work"
+                    ? animation.deconstructed_light
+                    : animation.deconstructed
+                }`}
+              >
                 Work
                 <div>Work</div>
                 <div>Work</div>
@@ -30,8 +51,21 @@ const Nav = () => {
                 <div>Work</div>
               </div>
             </Link>
-            <Link to="/culture">
-              <div className={`${nav.link} ${animation.deconstructed}`}>
+            <Link
+              to="/culture"
+              activeStyle={
+                path === "work"
+                  ? { borderBottomColor: "white" }
+                  : { borderBottomColor: "black" }
+              }
+            >
+              <div
+                className={`${nav.link} ${
+                  path === "work"
+                    ? animation.deconstructed_light
+                    : animation.deconstructed
+                }`}
+              >
                 Culture
                 <div>Culture</div>
                 <div>Culture</div>
@@ -39,8 +73,21 @@ const Nav = () => {
                 <div>Culture</div>
               </div>
             </Link>
-            <Link to="/contact">
-              <div className={`${nav.link} ${animation.deconstructed}`}>
+            <Link
+              to="/contact"
+              activeStyle={
+                path === "work"
+                  ? { borderBottomColor: "white" }
+                  : { borderBottomColor: "black" }
+              }
+            >
+              <div
+                className={`${nav.link} ${
+                  path === "work"
+                    ? animation.deconstructed_light
+                    : animation.deconstructed
+                }`}
+              >
                 Contact
                 <div>Contact</div>
                 <div>Contact</div>
@@ -51,7 +98,7 @@ const Nav = () => {
           </nav>
         </div>
       </div>
-    </header>
+    </div>
   );
 };
 

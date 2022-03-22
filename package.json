@@ -22,6 +22,7 @@
     "@mdx-js/react": "^1.6.22",
     "@mediacurrent/gatsby-plugin-silence-css-order-warning": "^1.0.0",
     "gatsby": "^4.9.3",
+    "gatsby-plugin-google-tagmanager": "^4.10.1",
     "gatsby-plugin-image": "^2.9.1",
     "gatsby-plugin-manifest": "^4.9.1",
     "gatsby-plugin-mdx": "^3.10.1",

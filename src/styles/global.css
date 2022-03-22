@@ -109,7 +109,7 @@ main {
   overflow: hidden;
   margin: 0 auto;
 }
-@media (max-width: 1020px) {
+@media (min-width: 950px) {
   .shape-wrapper:hover .shape {
     -webkit-clip-path: polygon(
       101% 5%,
@@ -140,7 +140,7 @@ main {
 .hover-container {
   position: relative;
 }
-@media (max-width: 1020px) {
+@media (min-width: 950px) {
   .hover-container:hover a {
     z-index: 4;
   }
@@ -179,7 +179,7 @@ main {
   overflow: hidden;
   margin: 30px 0;
 }
-@media (max-width: 1020px) {
+@media (min-width: 950px) {
   .work-shape-wrapper:hover .work-shape {
     -webkit-clip-path: polygon(
       85% 5%,

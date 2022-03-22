@@ -6,13 +6,10 @@ import * as footer from "../../styles/footer.module.css";
 import * as container from "../../styles/container.module.css";
 import * as dark from "../../styles/dark.module.css";
 
-import {
-  BsInstagram,
-  BsLinkedin,
+import { BsLinkedin, BsMedium } from "react-icons/bs";
+/* BsInstagram,
   BsTwitter,
-  BsPinterest,
-  BsMedium,
-} from "react-icons/bs";
+  BsPinterest,*/
 const Footer = ({ path }) => {
   const cheesecake = [0, 1, 2, 3];
   return (
@@ -48,7 +45,7 @@ const Footer = ({ path }) => {
           <div
             className={path === "work" ? dark.light_footer_link : footer.links}
           >
-            <Link to="/Culture">Culture</Link>
+            <Link to="/culture">Culture</Link>
             <div
               className={
                 path === "work"
@@ -61,7 +58,7 @@ const Footer = ({ path }) => {
           <div
             className={path === "work" ? dark.light_footer_link : footer.links}
           >
-            <Link to="/Culture">Contact</Link>
+            <Link to="/contact">Contact</Link>
             <div
               className={
                 path === "work"
@@ -91,19 +88,19 @@ const Footer = ({ path }) => {
               path === "work" ? dark.light_social_links : footer.social_links
             }
           >
-            <a
+            {/* <a
               href="https://www.instagram.com/cheesecake_agency/"
               className="mouse-hover"
             >
               <BsInstagram />
-            </a>
+            </a> */}
             <a
               href="https://www.linkedin.com/in/cheesecake-design-6b6b55207/"
               className="mouse-hover"
             >
               <BsLinkedin />
             </a>
-            <a
+            {/* <a
               href="https://in.pinterest.com/cheesecakeagency/_created/"
               className="mouse-hover"
             >
@@ -114,7 +111,7 @@ const Footer = ({ path }) => {
               className="mouse-hover"
             >
               <BsTwitter />
-            </a>
+            </a> */}
             <a
               href="https://medium.com/@Cheesecake_Agency"
               className="mouse-hover"

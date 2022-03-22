@@ -16,14 +16,20 @@ li div h2 {
   font-size: 5.5rem;
   color: #f49578;
   font-weight: normal;
+  position: relative;
+  z-index: 1;
 }
 li div h3 {
   font-size: 2.2rem;
   margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 li div p {
   font-size: 1.1rem;
   line-height: 2;
+  position: relative;
+  z-index: 1;
 }
 .list_num {
   margin-bottom: 1.2rem;

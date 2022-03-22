@@ -57,6 +57,9 @@
 }
 .social_links {
   padding-top: 3rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .social_links a svg {
   font-size: 1.8rem;

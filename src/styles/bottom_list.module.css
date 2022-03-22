@@ -13,6 +13,12 @@
   top: 0;
   position: absolute;
   width: 200px;
+  z-index: -2;
+}
+@media (max-width: 950px) {
+  .gif {
+    display: none;
+  }
 }
 .middle_text {
   font-family: "Gilda Display", serif;

@@ -13,11 +13,9 @@ const Case = ({ data }) => {
         <link rel="canonical" href={`${post.frontmatter.canonical}`} />
         <meta name="Keyword" content={`${post.frontmatter.keywords}`} />
         <meta name="Description" content={`${post.frontmatter.desc}`} />
-        <meta name="robots" content={`${post.frontmatter.robots}`} />
-        <link
-          rel="alternate"
-          href={`${post.frontmatter.alternate}`}
-          hreflang="en-us"
+        <meta
+          name="robots"
+          content="follow, index, max-snippet:-1,  max-video-preview:-1, max-image-preview:large"
         />
       </Helmet>
       <main>
@@ -39,16 +37,14 @@ export const query = graphql`
       frontmatter {
         embeddedImagesLocal {
           childImageSharp {
-            gatsbyImageData(formats: WEBP, layout: FULL_WIDTH)
+            gatsbyImageData(layout: FULL_WIDTH)
           }
         }
         video
-        robots
         name
         keywords
         desc
         canonical
-        alternate
       }
     }
   }

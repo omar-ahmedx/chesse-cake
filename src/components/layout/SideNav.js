@@ -47,16 +47,16 @@ const SideNav = () => {
 
       <div className={sideNav.side_links_container}>
         <div className={sideNav.side_links}>
-          <Link to="work">Work</Link>
+          <Link to="/work">Work</Link>
           <div className={sideNav.border_expand}></div>
         </div>
         <div className={sideNav.side_links}>
-          <Link to="culture">Culture</Link>
+          <Link to="/culture">Culture</Link>
           <div className={sideNav.border_expand}></div>
         </div>
 
         <div className={sideNav.side_links}>
-          <Link to="contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
           <div className={sideNav.border_expand}></div>
         </div>
       </div>

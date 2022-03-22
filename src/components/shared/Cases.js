@@ -46,7 +46,7 @@ const Cases = ({ path }) => {
         });
       });
     }
-  }, []);
+  });
 
   useEffect(() => {
     let maxDeltaX = 30,
@@ -79,7 +79,7 @@ const Cases = ({ path }) => {
         shape.childNodes[0].style.cssText = `transform: translate(0, 0)`;
       });
     });
-  }, []);
+  });
 
   useEffect(() => {
     const sliderImages = document.querySelectorAll(".shape");
@@ -91,7 +91,7 @@ const Cases = ({ path }) => {
         }
       });
     });
-  }, []);
+  });
 
   const data = useStaticQuery(graphql`
     query CasesInfo {

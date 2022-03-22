@@ -23,6 +23,9 @@
   text-align: center;
   border-bottom: 2px solid transparent;
 }
+.link {
+  padding: 0 5px;
+}
 .link,
 .link > * {
   font-size: 1.3rem;

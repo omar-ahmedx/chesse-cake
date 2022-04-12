@@ -95,6 +95,28 @@ const Nav = ({ path }) => {
                 <div>Contact</div>
               </div>
             </Link>
+            <Link
+              to="/blog"
+              activeStyle={
+                path === "work"
+                  ? { borderBottomColor: "white" }
+                  : { borderBottomColor: "black" }
+              }
+            >
+              <div
+                className={`${nav.link} ${
+                  path === "work"
+                    ? animation.deconstructed_light
+                    : animation.deconstructed
+                }`}
+              >
+                Blog
+                <div>Blog</div>
+                <div>Blog</div>
+                <div>Blog</div>
+                <div>Blog</div>
+              </div>
+            </Link>
           </nav>
         </div>
       </div>

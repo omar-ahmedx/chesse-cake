@@ -67,3 +67,7 @@
     padding-top: 0;
   }
 }
+.container_blog {
+  composes: container;
+  margin: 200px auto;
+}

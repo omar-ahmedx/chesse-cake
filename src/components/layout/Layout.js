@@ -130,7 +130,7 @@ const Layout = ({ path, children }) => {
   });
   return (
     <div>
-      <Helmet>
+      <Helmet htmlAttributes={{ lang: "en" }}>
         <meta
           name="p:domain_verify"
           content="44916985ed4481958cdd3c8e32146400"

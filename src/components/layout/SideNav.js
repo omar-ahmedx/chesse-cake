@@ -59,6 +59,10 @@ const SideNav = () => {
           <Link to="/contact">Contact</Link>
           <div className={sideNav.border_expand}></div>
         </div>
+        <div className={sideNav.side_links}>
+          <Link to="/blog">Blog</Link>
+          <div className={sideNav.border_expand}></div>
+        </div>
       </div>
     </div>
   );

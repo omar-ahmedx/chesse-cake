@@ -67,6 +67,18 @@ const Footer = ({ path }) => {
               }
             ></div>
           </div>
+          <div
+            className={path === "work" ? dark.light_footer_link : footer.links}
+          >
+            <Link to="/blog">Blog</Link>
+            <div
+              className={
+                path === "work"
+                  ? dark.light_border_expand
+                  : footer.border_expand
+              }
+            ></div>
+          </div>
         </div>
 
         <div>
@@ -97,6 +109,7 @@ const Footer = ({ path }) => {
             <a
               href="https://www.linkedin.com/in/cheesecake-design-6b6b55207/"
               className="mouse-hover"
+              aria-label="linkedin"
             >
               <BsLinkedin />
             </a>
@@ -115,6 +128,7 @@ const Footer = ({ path }) => {
             <a
               href="https://medium.com/@Cheesecake_Agency"
               className="mouse-hover"
+              aria-label="medium"
             >
               <BsMedium />
             </a>

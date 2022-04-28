@@ -18,6 +18,12 @@ const Home = () => {
           h1="We are a UI UX design agency."
           h2="We design the best user experience"
         />
+
+        <div>
+          <video controls poster={"/thumbnail.png"}>
+            <source src={"/wholeWork.mp4"} type="video/mp4" />
+          </video>
+        </div>
         <main>
           <FullCase path="home" />
 
